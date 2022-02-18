@@ -1,0 +1,19 @@
+{
+  "name": "express-js-mongodb-promise-api",
+  "version": "1.0.0",
+  "description": "express-js-mongodb-promise-api",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imran517/express-js-mongodb-promise-api.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Imran",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1"
+  }
+}
