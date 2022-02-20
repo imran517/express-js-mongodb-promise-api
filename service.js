@@ -21,7 +21,7 @@ class Service {
         });                
     }
 
-    getTask (id, callback) {
+    getTask (id) {
         return new Promise ((resolve, reject) => {
             dbContext.connect()
             .then(db => {
@@ -38,7 +38,7 @@ class Service {
         });  
     }
 
-    addTask (task, callback) {
+    addTask (task) {
         return new Promise ((resolve, reject) => {
             dbContext.connect()
             .then(db => {
@@ -56,7 +56,7 @@ class Service {
         });
     }
 
-    updateTask (task, callback) {
+    updateTask (task) {
         return new Promise ((resolve, reject) => {
             dbContext.connect()
             .then(db => {
@@ -74,7 +74,7 @@ class Service {
         });
     }
     
-    deleteTask (task, callback) {
+    deleteTask (task) {
         return new Promise ((resolve, reject) => {
             dbContext.connect()
             .then(db => {
