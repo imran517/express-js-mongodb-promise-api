@@ -12,9 +12,9 @@ module.exports = {
           console.log("Successfully connected to MongoDB.");
           resolve(client.db("taskdb"))
         })
-        .catch (err => { 
-          console.error(`Fatal error occurred: ${err}`);
-          reject(err);
+        .catch (error => { 
+          console.error(`Fatal error occurred: ${error}`);
+          reject(error);
         });
       });
     }

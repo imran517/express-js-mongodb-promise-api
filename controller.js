@@ -6,8 +6,8 @@ function getTasks (req, res) {
     .then(result => {
         return res.json(result);
     })
-    .catch (err => { 
-        console.error(`Fatal error occurred: ${err}`)
+    .catch (error => { 
+        return res.json(error);
     });
 }
 
@@ -16,8 +16,8 @@ function getTask (req, res) {
     .then(result => {
         return res.json(result);
     })
-    .catch (err => { 
-        console.error(`Fatal error occurred: ${err}`)
+    .catch (error => { 
+        return res.json(error);
     });
 }
 
@@ -26,8 +26,8 @@ function addTask(req, res) {
     .then(result => {
         return res.json(result);
     })
-    .catch (err => { 
-        console.error(`Fatal error occurred: ${err}`)
+    .catch (error => { 
+        return res.json(error);
     });
 }
 
@@ -36,8 +36,8 @@ function updateTask(req, res) {
     .then(result => {
         return res.json(result);
     })
-    .catch (err => { 
-        console.error(`Fatal error occurred: ${err}`)
+    .catch (error => { 
+        return res.json(error);
     });
 }
 
@@ -46,8 +46,8 @@ function deleteTask(req, res) {
     .then(result => {
         return res.json(result);
     })
-    .catch (err => { 
-        console.error(`Fatal error occurred: ${err}`)
+    .catch (error => { 
+        return res.json(error);
     });
 }
 
